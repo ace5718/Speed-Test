@@ -1,0 +1,19 @@
+div{
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
+
+    animation: move 4s infinite;
+}
+
+@keyframes move{
+    from{
+        background: red;
+        left: 0px;
+    }
+    to{
+        background: blue;
+        left: 200px;
+    }
+}

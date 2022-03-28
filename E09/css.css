@@ -1,0 +1,41 @@
+input[type="checkbox"].switch {
+    position: absolute;
+}
+
+input[type="checkbox"].switch+label {
+    position: relative;
+}
+
+input[type="checkbox"].switch+label:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 24px;
+    border-radius: 16px;
+    background: white;
+    border: 1px solid lightgray;
+}
+
+input[type="checkbox"].switch+label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    width: 24px;
+    height: 24px;
+    border-radius: 16px;
+    background: white;
+    border: 1px solid lightgray;
+}
+
+input[type="checkbox"].switch:checked+label:after {
+    margin-left: 16px;
+}
+
+input[type="checkbox"].switch:checked+label:before {
+    background: lightgreen;
+}

@@ -1,0 +1,100 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes fade{
+    from{
+        opacity: 1.0;
+    }
+    50%{
+        opacity: 0;
+    }
+    to{
+        opacity: 1.0;
+    }
+}
+
+.point span {
+    height: 5px !important;
+    margin: 15px 5px 20px 0px;
+    animation: fade 500ms infinite;
+}
+
+.clock{
+    margin: 10px;
+}
+.clock span{
+    display: block;
+    width: 5px;
+    height: 20px;
+    background: red;
+}
+
+.clock span.s1,
+.clock span.s4,
+.clock span.s7 {
+    /* 水平的黑色條 */
+    width: 20px;
+    height: 5px;
+}
+
+.clock span.s2,
+.clock span.s5 {
+    /* 左邊垂直黑色條 */    
+    margin-left: -5px;
+}
+
+.clock span.s3,
+.clock span.s6 {
+    /* 右邊垂直黑色條 */
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.clock-1 span.s1,
+.clock-1 span.s2,
+.clock-1 span.s4,
+.clock-1 span.s5,
+.clock-1 span.s7{
+    opacity: 0.1;
+}
+.clock-2 span.s2,
+.clock-2 span.s6{
+    opacity: 0.1;
+}
+
+.clock-3 span.s2,
+.clock-3 span.s5{
+    opacity: 0.1;
+}
+
+.clock-4 span.s1,
+.clock-4 span.s5,
+.clock-4 span.s7{
+    opacity: 0.1;
+}
+
+.clock-5 span.s3,
+.clock-5 span.s5{
+    opacity: 0.1;
+}
+
+.clock-6 span.s3{
+    opacity: 0.1;
+}
+
+.clock-7 span.s2,
+.clock-7 span.s4,
+.clock-7 span.s5,
+.clock-7 span.s7{
+    opacity: 0.1;
+}
+
+.clock-9 span.s5{
+    opacity: 0.1;
+}
+
+.clock-0 span.s4{
+    opacity: 0.1;
+}

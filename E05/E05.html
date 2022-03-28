@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css.css">
+    
+</head>
+
+<body>
+    <div class="block">
+        <div class="color_block_main">
+            <div class="color_block" id="block1" onclick="left('block1')"></div>
+            <div class="color_block" id="block2" onclick="left('block2')"></div>
+            <div class="color_block" id="block3" onclick="left('block3')"></div>
+            <div class="color_block" id="block4" onclick="left('block4')"></div>
+            <div class="color_block" id="block5" onclick="left('block5')"></div>
+        </div>
+
+        <input id="left" type="text" placeholder="請輸入色碼" value="#FF0000">
+        <div id="main" style="background-image: linear-gradient(to right, #FF0000, #0000FF)"></div>
+        <input id="right" type="text" placeholder="請輸入色碼" value="#0000FF">
+
+        <div class="color_block_main">
+            <div class="color_block" id="block6" onclick="right('block6')"></div>
+            <div class="color_block" id="block7" onclick="right('block7')"></div>
+            <div class="color_block" id="block8" onclick="right('block8')"></div>
+            <div class="color_block" id="block9" onclick="right('block9')"></div>
+            <div class="color_block" id="block10" onclick="right('block10')"></div>
+        </div>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>
